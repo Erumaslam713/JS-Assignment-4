@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM Mobile & Cloud Computing</title>
+</head>
+<body>
+   <script src="pro.js"></script>
+
+
+ <div>
+        <h1>DOM</h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label><br>
+            <input type="text" id="first-name" /><br>
+            <label for="last-name">Last Name</label><br>
+            <input type="text" id="last-name" /><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" />
+        </div>
+     <br>
+        <button id="button">Submit</button>
+        <div id="main-content" class="content"> 
+             <p class="render">First Name : </p>
+            <p class="render" id="lastName">Last Name: </p>
+            <p class="render">Email : </p>
+<p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div> 
+
+    <script> 
+         // // i. Get element of id “main-content” and assign them in a variable.
+        // const mainContent = document.getElementById("main-content");
+
+        // ii. Display all child elements of “main-content” element.
+        const childElements = mainContent.children; 
+
+  console.log("Child elements of main-content:");
+        for (let i = 0; i < childElements.length; i++) {
+            console.log(childElements[i]);
+        } 
+
+         // iii. Get all elements of class “render” and show their innerHTML in browser.
+        const renderElements = document.getElementsByClassName("render");
+        console.log("Inner HTML of render elements:");
+        for (let i = 0; i < renderElements.length; i++) {
+            document.write(renderElements[i].innerHTML + "<br>");
+        }
+
+        // iv. Fill input value whose element id first-name using javascript.
+        documen.getElementById("first-name").value = "Alex";
+
+        // v. Repeat part iv for id ”last-name” and “email” in js
+        document.getElementById("last-name").value = "Bank";
+        document.getElementById("email").value = "alexbank@example.com";
+
+    </script>
+    </body>
+
+</html>
+
+
+
+

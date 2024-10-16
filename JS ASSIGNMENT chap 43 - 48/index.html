@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Alert on Link Click</title>
+    <script>
+        //     //  1. Show an alert box on click on a link. 
+        function showAlert() {
+            alert("Link clicked!");
+        }
+        //     </script>
+
+    //
+    <!-- 2. Display some Mobile images in browser. On click on an 
+     image Show the message in alert to user.  -->
+
+    <a href="#" onclick="showAlert(); return false;">Click me!</a>
+
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        img {
+            width: 150px;
+            /* Set image width */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin: 10px;
+            cursor: pointer;
+            /* Change cursor to pointer on hover */
+            border: 2px solid #ccc;
+            /* Optional: add a border */
+            border-radius: 8px;
+            /* Optional: add rounded corners */
+            transition: transform 0.2s;
+            /* Smooth scaling effect */
+        }
+
+        img:hover {
+            transform: scale(1.90);
+            /* Scale up on hover */
+        }
+    </style>
+    <script>
+        function showAlert(imageName) {
+            alert(`Thanks for purchasing a mobile for us ${imageName}`);
+        }
+    </script>
+</head>
+
+<body> -->
+
+    <h1>Mobile Phone Lookup</h1>
+    <div class="image-container">
+        <img src="iPhone6plus.gif.jpeg" alt="Mobile 1" onclick="showAlert('Mobile 1')">
+        <img src="GalaxyS6EdgePlus.gif.jpeg" alt="Mobile 2" onclick="showAlert('Mobile 2')">
+        <img src="V10.gif.jpeg" alt="Mobile 3" onclick="showAlert('Mobile 3')">
+        <img src="HuaweiPS.gif.jpeg" alt="Mobile 4" onclick="showAlert('Mobile 4')">
+    </div>
+
+    <h1>Image Change on Hover</h1>
+
+    <img id="image" src="scenery 1.jpeg" id="before" onmouseover="swapImage">
+
+
+    <!--Ans of Q3.-->
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: lightslategray;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <h2 style="text-align: center;">Student Records</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Erum</td>
+                    <td>20</td>
+                    <td>A+</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Sadaf</td>
+                    <td>18</td>
+                    <td>A</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>19</td>
+                    <td>A</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Zeeshan</td>
+                    <td>21</td>
+                    <td>C</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Laiqa</td>
+                    <td>20</td>
+                    <td>A</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Hira</td>
+                    <td>23</td>
+                    <td>A</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Aqib</td>
+                    <td>18</td>
+                    <td>A</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Saira</td>
+                    <td>22</td>
+                    <td>A+</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Aiman</td>
+                    <td>20</td>
+                    <td>A</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Nabeel</td>
+                    <td>21</td>
+                    <td>C</td>
+                    <td><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <body>
+
+            <!-- Ans of Q2 -->
+            <style>
+                img {
+                    height: 200px;
+                    width: 150px;
+                    margin: 10px;
+                    transition: transform 0.2s;
+                }
+
+                img:hover {
+                    transform: scale(1.20);
+                }
+            </style>
+
+            <h2 style="text-align: center;">Mobile Phone lookup</h2>
+            <div style="text-align: center;">
+                <img src="/iPhone6Plus.gif.jpg" alt="iPhone6Plus"
+                    onclick="showAlert('Thanks for purchasing a phone from us')">
+                <img src="/GalaxyS6EdgePlus.gif.jpg" alt="GalaxyS6EdgePlus"
+                    onclick="showAlert('Thanks for purchasing a phone from us')">
+                <img src="/V10.gif.jpg" alt="V1…
+
+
+    <script src=" pro.js"></script>
+
+
+        </body>
+
+</html>
